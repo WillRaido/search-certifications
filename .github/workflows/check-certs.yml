@@ -25,7 +25,7 @@ jobs:
       run: python credly_checker.py
       
     - name: Upload results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: github-certification-results
         path: |
