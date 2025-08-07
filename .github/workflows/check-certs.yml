@@ -683,7 +683,7 @@ jobs:
         EOF
         
     - name: 📤 Subir resultados
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v3
       with:
         name: 🏆-github-certification-results-selenium
         path: |
@@ -852,7 +852,7 @@ jobs:
         EOF
         
     - name: 📤 Subir resultados
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: 🏆-github-certification-results
         path: |
