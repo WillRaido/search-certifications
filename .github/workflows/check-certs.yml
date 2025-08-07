@@ -1,4 +1,4 @@
-name: Verificar Certificaciones GitHub (Selenium)
+name: 🏆 Verificar Certificaciones GitHub (Selenium)
 
 on:
   workflow_dispatch:  # Ejecutar manualmente
@@ -852,7 +852,7 @@ jobs:
         EOF
         
     - name: 📤 Subir resultados
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v3
       with:
         name: 🏆-github-certification-results
         path: |
