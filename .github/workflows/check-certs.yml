@@ -1,4 +1,4 @@
-name: Verificar Certificaciones
+name: Verificar Certificaciones GitHub
 
 on:
   workflow_dispatch:  # Ejecutar manualmente
@@ -21,11 +21,21 @@ jobs:
       run: |
         pip install requests beautifulsoup4
         
-    - name: Run certification check
+    - name: Run GitHub certification check
       run: python credly_checker.py
       
     - name: Upload results
       uses: actions/upload-artifact@v3
       with:
-        name: certification-results
-        path: results.json
+        name: github-certification-results
+        path: |
+          results.json
+          report.txt
+          
+    - name: Show summary
+      run: |
+        echo "🎯 Verificación completada!"
+        if [ -f "report.txt" ]; then
+          echo "📄 Resumen:"
+          head -15 report.txt
+        fi
