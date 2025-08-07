@@ -1,4 +1,4 @@
-name: 🏆 Verificar Certificaciones GitHub (Selenium)
+name: Verificar Certificaciones GitHub (Selenium)
 
 on:
   workflow_dispatch:  # Ejecutar manualmente
